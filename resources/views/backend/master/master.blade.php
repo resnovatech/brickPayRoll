@@ -54,8 +54,14 @@
 
         </style>
         @yield('css')
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
         <link rel="stylesheet" href="https://parsleyjs.org/src/parsley.css">
 
 <script src="{{ asset('/')}}public/new_admin/parsely1.js"></script>
@@ -217,6 +223,7 @@
 <!-- Dashboard init -->
 <script src="{{ asset('/') }}public/new_admin/assets/js/pages/dashboard-job.init.js"></script>
 
+  <!-- init js -->
 
   <!--datatable js-->
   <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>

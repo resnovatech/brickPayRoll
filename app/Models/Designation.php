@@ -18,6 +18,11 @@ class Designation extends Model
         return $this->belongsTo(Admin::class);
     }
 
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
+
     public function employees()
     {
         return $this->hasMany(Employee::class);

@@ -17,4 +17,9 @@ class Department extends Model
     {
         return $this->belongsTo(Admin::class);
     }
+
+    public function designations()
+    {
+        return $this->hasMany(Designations::class);
+    }
 }
