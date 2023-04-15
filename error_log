@@ -1,0 +1,1 @@
+[10-Apr-2023 05:07:35 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\WalkByPatientController::edit() in /home/nirrtjiu/ayurveda.resnova.dev/app/Http/Controllers/WalkByPatientController.php on line 145
